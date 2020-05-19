@@ -39,6 +39,7 @@ def main():
         print(f"Device collection failed with code {get_resp.status_code}")
         print(f"FAILURE body: {get_resp.text}")
 
+
 #    import json; print(json.dumps(get_resp.json(), indent=2))
 
 if __name__ == "__main__":
