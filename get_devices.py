@@ -37,7 +37,7 @@ def main():
             print(f"ID: {device['id']}  IP: {device['managementIpAddress']}")
     else:
         print(f"Device collection failed with code {get_resp.status_code}")
-        print(f"Failure body: {get_resp.text}")
+        print(f"FAILURE BODY: {get_resp.text}")
 
 #    import json; print(json.dumps(get_resp.json(), indent=2))
 
