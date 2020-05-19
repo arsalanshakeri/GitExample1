@@ -36,7 +36,7 @@ def main():
         for device in get_resp.json()["response"]:
             print(f"ID: {device['id']}  IP: {device['managementIpAddress']}")
     else:
-        print(f"Device collection failed with code {get_resp.status_code}")
+        print(f"Device collection failed with error code {get_resp.status_code}")
         print(f"FAILURE BODY: {get_resp.text}")
 
 #    import json; print(json.dumps(get_resp.json(), indent=2))
